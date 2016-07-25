@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="form-group">
+    <div class="register-jumbo col-xs-6 col-xs-offset-3 text-center jumbotron">
+      <h3>Register</h3>
+      <hr>
+      <div class="text-center">
+        <form name='newUserForm'>
+          <input ng-model='registerObj.name' type="text" class="form-control" placeholder="Name" required>
+          <br>
+          <input ng-model='registerObj.Email' type="text" class="form-control" placeholder="Email" required>
+          <br>
+          <input ng-model='registerObj.Username' type="text" class="form-control" placeholder="Username" required>
+          <br>
+          <input ng-model='registerObj.password' type="password" class="form-control" placeholder="Password" required>
+          <br>
+          <input ng-model='registerObj._Password' type="password" class="form-control" placeholder="Verify Password" required>
+          <br>
+          <input ng-model='registerObj.Avatar' type="text" class="form-control " placeholder="Avatar URL">
+          <br>
+          <!-- <div class="fileinput fileinput-new " data-provider='fileinput'>
+            <input class="btn btn-info btn-sm btn-file" type='file' name='file' style="font-size: 12px; color : #DEDEDE">Choose Image File</input><br>
+            <small ng-model='registerObj.AvatarFile' class="fileinput-new"></small>
+          </div> -->
+          <!-- uploadForm -->
+          <form name="uploadForm">
+            <button type='button' class="btn btn-xs btn-info"
+            ng-hide='s3Image'
+            ng-model="file"
+            name="newFile"
+            ngf-select
+            ngf-pattern="'image/*'"
+            ngf-accept="'image/*'"
+            ngf-max-size="20MB"
+            ngf-min-height="100">Select File</button>
+            <button ng-show='file' type='button' ng-click='submit(file)' class='btn btn-xs btn-primary'>Upload</button>
+            <br><br>
+            <span id='register-thumbnail' ng-hide='s3Image'>
+              <img ngf-thumbnail='file' id='register-thumbnail'/>
+            </span>
+            <img id='register-avatar' ng-src='{{s3Image}}' ng-show='s3Image'/>
+            <br>
+            <span ng-hide='s3Image' class="text-warning">OR </span><span ng-hide='s3Image'>Drag and Drop images...</span>
+          </form>
+          <fieldset ng-hide='s3Image'>
+            <legend> </legend>
+            <div ngf-drop="upload($files)" class="drop-box" ngf-drag-over-class="'dragover'">
+              <span class="text-danger">HERE</span>
+            </div>
+            <br>
+            <legend></legend>
+          </fieldset>
+          <br>
+          <!-- end -->
+          <textarea ng-model='registerObj.Bio' class='form-control' placeholder="Bio"></textarea>
+          <hr>
+          <button ng-click='registerNewUser(registerObj, s3Image)' class="btn btn-warning btn-lg">Register</button>
+        </form>
+        <hr>
+        <p><a ui-sref="login">Login</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<pre class='text-left'>{{newUserForm | json}}</pre>

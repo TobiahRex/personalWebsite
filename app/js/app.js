@@ -1,0 +1,11 @@
+angular.module('fullStackTemplate',
+['ngAnimate',
+'ngFileUpload',
+'ui.bootstrap',
+'ui.router',
+'oitozero.ngSweetAlert',
+'angularMoment',
+'btford.socket-io',
+'satellizer',
+'toastr',
+'angular-loading-bar']);
