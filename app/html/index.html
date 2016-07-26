@@ -17,10 +17,11 @@
   <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="/css/assets/jquery.min.js"></script>
   <script src="/css/assets/bootstrap.min.js"></script>
-  <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 
   <!-- VENDORS -->
   <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.0.js"></script>
   <script src="/bower_components/angular-loading-bar/src/loading-bar.js"></script>
   <script src="/bower_components/moment/moment.js"></script>
   <script src="/bower_components/angular-moment/angular-moment.js"></script>
@@ -62,6 +63,9 @@
   <script src="/js/controllers/modalCtrls/deleteThing2Controller.js"></script>
   <script src="/js/controllers/modalCtrls/insertThingController.js"></script>
 
+  <!-- CAROUSEL Controller -->
+  <script src="" charset="utf-8"></script>
+
   <!-- SERVICES -->
   <script src="/js/services/authServices.js"></script>
   <script src="/js/services/profileServices.js"></script>
@@ -72,32 +76,35 @@
   <script src="/js/directives/testDirective.js"></script>
 
   <title>
-    Full Stack Template
+    Tobiah Rex
   </title>
 </head>
-<body ng-app='fullStackTemplate' ng-controller='mainController as main'>
+<body ng-app='fullStackTemplate' ng-controller='mainController'>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <div class="navbar-header">
+      <div class="navbar-header text-center col-xs-12">
         <button class="navbar-toggle collapsed" data-toggle='collapse' data-target="#collapse-nav">
           <span class="sr-only">Toggle Navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <span class="signature-nav navbar-brand"> <span class="text-primary">&nbsp &nbsp &nbsp by</span><a class='to-splash' ui-sref='splash'> Tobiah Rex</a></span>
-        <ul class="nav navbar-nav">
-          <li class="active"> <a ui-sref='home'>Home</a> </li>
-        </ul>
+        <span class="signature-nav"><a class='to-splash' ui-sref='splash'> Tobiah Rex</a></span>
+        <br>
+        <div class="row">
+          <div class=' col-xs-8 col-xs-offset-4'>
+            <ul class="nav navbar-nav">
+              <li class="active"> <a ui-sref='home'>Portfolio</a> </li>
+              <li class="active"> <a ui-sref='home'>Techniques</a> </li>
+              <li class="active"> <a ui-sref='home'>About</a> </li>
+              <li class="active"> <a ui-sref='home'>Contact</a> </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="collapse navbar-collapse" id='collapse-nav'>
-        <ul class="nav navbar-nav navbar-right">
-          <!-- if logged in -->
-          <li class="active"><a ng-show='currentUser' ui-sref='profile({id: currentUser._id})'>Profile</a></li>
-          <li class="active"><a ng-show='currentUser' ng-click='logout()'>Logout</a></li>
-          <!-- if NOT logged in -->
-          <li class="active"><a ng-hide='currentUser' ui-sref='login'>Login</a></li>
-          <li class="active"><a ng-hide='currentUser' ui-sref='register'>Register</a></li>
+        <ul class="nav navbar-nav">
+
         </ul>
       </div>
     </div>

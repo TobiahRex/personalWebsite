@@ -1,11 +1,36 @@
+@font-face {
+font-family: 'Roboto Italic';
+src: url('/css/assets/Roboto-Thin.ttf');
+}
+
 body {
-  background-image: url("/css/images/dark-fabric.png");
+  background-image: url("/css/images/codecode.jpg");
+}
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.94);
 }
 
 .navbar-default .navbar-nav > .active > a {
   color: #2a9fd6;
   background-color: transparent;
   font-size: 18px;
+}
+
+nav.navbar.navbar-default {
+  font-family: 'Roboto Italic';
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.94);
+  box-shadow: 0px 1px 17px rgb(0, 151, 255);
+  position: fixed;
+}
+
+div.navbar-header {
+  padding-top: 20px;
+}
+
+#collapse-nav {
+  padding-top: 20px;
 }
 
 hr {
@@ -40,7 +65,7 @@ button.btn:hover, .btn-info:hover {
 }
 
 .signature-nav {
-  font-size: 12px;
+  font-size: 28px;
 }
 
 div.enter-button > button.btn-primary.btn-lg {
@@ -88,4 +113,46 @@ i.fa.fa-5x.text-primary:hover {
 #register-thumbnail {
   max-width: 100px;
   -webkit-filter: grayscale(100%);
+}
+
+#main-fold {
+  padding-top: 200px;
+
+}
+
+#profile-picture-main {
+  width: 250px;
+  border-radius: 50%;
+}
+
+#about-description {
+  border-left: 0px;
+  border-left-color: #000000;
+}
+
+#portfolio-slides {
+  padding-top: 200px;
+}
+
+#carousel {
+  height: 592px;
+}
+
+img.carousel-image {
+  width: 55%;
+  padding-bottom: 40px;
+}
+
+img.carousel-image {
+  width: 55%;
+}
+
+div.carousel-caption {
+  bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+div.carousel-caption > p.ng-binding {
+  margin-bottom: 0px;
 }

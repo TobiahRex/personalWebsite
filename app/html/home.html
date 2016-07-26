@@ -1,19 +1,25 @@
-<div class="container">
-  <h1>Home</h1>
-  <hr>
-  <!-- <pre>
-  {{ allTheStuff | json }}
-</pre> -->
-<!-- <div class="modal-buttons same-width clearfix">
-<button type="button" class="btn btn-success" ng-click="showSuccessMsg()">Success Notification</button>
-<button type="button" class="btn btn-info" ng-click="showInfoMsg()">Info Notification</button>
-<button type="button" class="btn btn-warning" ng-click="showWarningMsg()">Warning Notification</button>
-<button type="button" class="btn btn-danger" ng-click="showErrorMsg()">Danger Notification</button>
-</div> -->
+<div id='portfolio-slides'>
+  <div class='jumbotron' style="height: 650px">
+    <div id='carousel' uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <div class="row col-xs-10 col-xs-offset-1">
+          <img class='carousel-image col-xs-4' ng-src="{{slide.image}}" style="margin:auto;">
+          <i class="col-xs-4 col-xs-offset-1 fa fa-5x fa-github" style='font-size: 100px'></i><br>
+          <hr>
+          <blockquote class='col-xs-offset-1 col-xs-4' id='project-description' cite="https://git.heroku.com/mighty-shore-12223.git">
+            <span><i class='text-warning'> Full Stack</i></span><br>
+            <span class="text-danger">Back End: </span> Node.js, Express.js, Mongo DB <br>
+            <span class="text-success">Front End: </span> Angular.js <br>
+            <span class="text-info">Repo: </span> on <a href="https://github.com/TobiahRex/chFinal.git">Github</a><br>
+            <span class="text-warning">Hosted: </span> on <a href="https://fathomless-everglades-44961.herokuapp.com/#/">Heroku </a>
+          </blockquote>
 
-<!-- <div ng-controller='testCtrl'>
-  <test-dir data='avengers' villains='avenger_villains'></test-dir>
-  <my-custom-form submit='onSubmit'></my-custom-form>
-</div> -->
+          <div class="carousel-caption">
+            <p>{{slide.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
