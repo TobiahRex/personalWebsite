@@ -6,23 +6,21 @@ function homeController($scope, $state, toastr) {
   $scope.noWrapSlides = false;
   $scope.active = 0;
   var slides = $scope.slides = [  {
-      image: '/css/images/stockApp.png',
-      text: `Personal Stock Watch:
-      Search by TICKER or Name, add, edit, and remove from personal watchlist.  
-
-      Searching without profile friendly.`,
-      id: 0
-    },
-    {
-      image: '/css/images/yelpApp.png',
-      text: 'Yelp Search - Favorites App',
-      id: 1
-    },
-    {
-      image: '/css/images/photoAlbumApp.png',
-      text: 'Personal Photo Album App',
-      id: 2
-    }];
+    image: '/css/images/stockApp.png',
+    title: 'Personal Stock Watch',
+    text: 'Search by TICKER or Name, add, edit, and remove from personal watchlist. Searching without profile friendly.',
+    id: 0,
+  },{
+    image: '/css/images/yelpApp.png',
+    title: 'Personal Stock Watch',
+    text: 'Yelp Search - Favorites App',
+    id: 1,
+  },{
+    image: '/css/images/photoAlbumApp.png',
+    title: 'Personal Photo Album Manager',
+    text: 'Make Album, upload photos, assign photos to personalized collections.',
+    id: 2,
+  }];
   console.log('slides: ', slides);
   var currIndex = 0;
 
