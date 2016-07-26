@@ -164,3 +164,14 @@ div.carousel-caption > p.ng-binding {
 span.italic {
   font-family: 'Roboto Italic';
 }
+
+#skills {
+  padding-top: 200px;
+}
+
+div.skill-wells {
+  margin-left: 40px;
+  margin-right: 20px;
+  background-color: rgba(3, 33, 115, 0.41);
+  height: 400px;
+}

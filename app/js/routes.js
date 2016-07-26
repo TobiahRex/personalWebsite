@@ -18,9 +18,9 @@ function stateProvider($stateProvider, $urlRouterProvider, $authProvider, toastr
     templateUrl: 'html/sign_in/register.html',
     controller: 'registerController',
   })
-  .state('verify', {
+  .state('skills', {
     url: '/skills',
-    templateUrl: 'html/sign_in/skills.html',
+    templateUrl: 'html/skills.html',
   })
   .state('verified', {
     url: '/verified',
