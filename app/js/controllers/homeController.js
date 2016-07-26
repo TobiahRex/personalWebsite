@@ -8,7 +8,7 @@ function homeController($scope, $state, toastr) {
   var slides = $scope.slides = [  {
     image: '/css/images/stockApp.png',
     title: 'Personal Stock Watch',
-    text: 'Search by TICKER or Name, add, edit, and remove from personal watchlist. Searching without profile friendly.',
+    text: 'Search by TICKER or Name. Create a profile. Add, edit, or remove your personal profile watchlist.',
     id: 0,
   },{
     image: '/css/images/yelpApp.png',

@@ -17,10 +17,9 @@ body {
 }
 
 nav.navbar.navbar-default {
-  font-family: 'Roboto Italic';
-  height: 100px;
+  height: 120px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.94);
+  background-color: rgba(0, 0, 0, 0.96);
   box-shadow: 0px 1px 17px rgb(0, 151, 255);
   position: fixed;
 }
@@ -156,4 +155,12 @@ div.carousel-caption {
 
 div.carousel-caption > p.ng-binding {
   margin-bottom: 0px;
+}
+
+#navbar-links {
+  font-family: 'Roboto Italic';
+}
+
+span.italic {
+  font-family: 'Roboto Italic';
 }
