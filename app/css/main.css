@@ -175,7 +175,7 @@ div.skill-wells {
   margin-left: 40px;
   margin-right: 20px;
   background-color: rgb(9,18,45);
-  height: 1560px;
+  height: 1840px;
 }
 #javascript-skill {
   width: 100px;
@@ -190,10 +190,10 @@ div.skill-wells {
   width: 130px;
 }
 #mongoose-skill {
-  width: 170px;
+  width: 160px;
 }
 #node-skill  {
-  width: 170px;
+  width: 160px;
 }
 #json-skill {
   width: 140px;
@@ -214,19 +214,19 @@ div.skill-wells {
   width: 140px;
 }
 #sqlite-skill {
-  width: 190px;
+  width: 160px;
 }
 #mysql-skill {
-  width: 200px;
+  width: 160px;
 }
 #aws-skill {
-  width: 200px;
+  width: 160px;
 }
 #bluemix-skill {
   width: 150px;
 }
 #abnb-skill {
-  width: 190px;
+  width: 160px;
 }
 #react-skill {
   width: 160px;
@@ -235,5 +235,5 @@ div.skill-wells {
   width: 160px;
 }
 #firebase-skill {
-  width: 170px;
+  width: 160px;
 }
