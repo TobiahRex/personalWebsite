@@ -5,12 +5,12 @@ function stateProvider($stateProvider, $urlRouterProvider, $authProvider, toastr
   $stateProvider
   .state('about', {
     url: '/about',
-    templateUrl: 'html/splash.html',
+    templateUrl: 'html/about.html',
     controller: 'splashController',
   })
   .state('portfolio', {
     url: '/portfolio',
-    templateUrl: 'html/home.html',
+    templateUrl: 'html/portfolio.html',
     controller: 'homeController',
   })
   .state('register', {
@@ -19,8 +19,8 @@ function stateProvider($stateProvider, $urlRouterProvider, $authProvider, toastr
     controller: 'registerController',
   })
   .state('verify', {
-    url: '/verify',
-    templateUrl: 'html/sign_in/verify.html',
+    url: '/skills',
+    templateUrl: 'html/sign_in/skills.html',
   })
   .state('verified', {
     url: '/verified',
