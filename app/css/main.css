@@ -43,9 +43,20 @@ span.to-splash {
   font-weight: bolder;
   background-color: transparent;
 }
-a.to-splash:hover {
+a.navlinks {
   text-decoration: none;
   color: #2a9fd6;
+  background-color: transparent;
+}
+a.navlinks:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+a.navlinks:focus {
+  text-decoration: none;
+  color: #FFFFFF;
   background-color: transparent;
 }
 
@@ -146,7 +157,7 @@ img.carousel-image {
 }
 
 img.carousel-image {
-  padding-bottom: 150px;
+  padding-bottom: 200px;
   width: 55%;
 }
 
