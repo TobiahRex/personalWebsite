@@ -11,7 +11,7 @@ function main($state, $scope, $auth, Auth, toastr) {
     })
     .catch(() => {
       vm.currentUser = null;
-      $state.go('login');
+      $state.go('home');
     });
   }
   function logout() {

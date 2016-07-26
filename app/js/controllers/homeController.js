@@ -12,13 +12,13 @@ function homeController($scope, $state, toastr) {
     id: 0,
   },{
     image: '/css/images/yelpApp.png',
-    title: 'Personal Stock Watch',
-    text: 'Yelp Search - Favorites App',
+    title: 'Yelp Search Mockup',
+    text: 'Search Restuarants by location. Save to Favorites. Edit Favorites.',
     id: 1,
   },{
     image: '/css/images/photoAlbumApp.png',
     title: 'Personal Photo Album Manager',
-    text: 'Make Album, upload photos, assign photos to personalized collections.',
+    text: 'Make an alubm. Upload photos. Assign photos to personalized collections.',
     id: 2,
   }];
   console.log('slides: ', slides);

@@ -3,13 +3,13 @@ function stateProvider($stateProvider, $urlRouterProvider, $authProvider, toastr
   $authProvider.signupUrl = '/api/users/register';
 
   $stateProvider
-  .state('splash', {
-    url: '/',
+  .state('about', {
+    url: '/about',
     templateUrl: 'html/splash.html',
     controller: 'splashController',
   })
-  .state('home', {
-    url: '/home',
+  .state('portfolio', {
+    url: '/portfolio',
     templateUrl: 'html/home.html',
     controller: 'homeController',
   })
