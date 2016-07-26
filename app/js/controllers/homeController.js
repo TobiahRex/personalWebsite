@@ -7,7 +7,10 @@ function homeController($scope, $state, toastr) {
   $scope.active = 0;
   var slides = $scope.slides = [  {
       image: '/css/images/stockApp.png',
-      text: 'Market On Demand - Personal Watchlist App',
+      text: `Personal Stock Watch:
+      Search by TICKER or Name, add, edit, and remove from personal watchlist.  
+
+      Searching without profile friendly.`,
       id: 0
     },
     {
