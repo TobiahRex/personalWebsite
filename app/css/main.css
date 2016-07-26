@@ -36,8 +36,11 @@ hr {
   border-color: #0F0F0F
 }
 
-a.to-splash {
+span.to-splash {
   color: white;
+  font-family: 'Roboto Italic';
+  font-size: 38px;
+  font-weight: bolder;
   background-color: transparent;
 }
 a.to-splash:hover {
@@ -172,10 +175,12 @@ span.italic {
   background-color: rgba(0, 0, 0, 0.78);
 }
 div.skill-wells {
-  margin-left: 40px;
   margin-right: 20px;
   background-color: rgb(9,18,45);
   height: 1840px;
+}
+p.skill-title {
+  font-size: 34px;
 }
 #javascript-skill {
   width: 100px;
