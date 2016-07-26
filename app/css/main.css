@@ -168,10 +168,72 @@ span.italic {
 #skills {
   padding-top: 200px;
 }
-
+#jumbotron-skills {
+  background-color: rgba(0, 0, 0, 0.78);
+}
 div.skill-wells {
   margin-left: 40px;
   margin-right: 20px;
-  background-color: rgba(3, 33, 115, 0.41);
-  height: 400px;
+  background-color: rgb(9,18,45);
+  height: 1560px;
+}
+#javascript-skill {
+  width: 100px;
+}
+#html5-skill {
+  width: 100px;
+}
+#css3-skill {
+  width: 70px;
+}
+#mongo-skill {
+  width: 130px;
+}
+#mongoose-skill {
+  width: 170px;
+}
+#node-skill  {
+  width: 170px;
+}
+#json-skill {
+  width: 140px;
+}
+#jquery-skill {
+  width: 130px;
+}
+#socket-skill {
+  width: 130px;
+}
+#gulp-skill {
+  width: 90px;
+}
+#mocha-skill{
+  width: 160px;
+}
+#chai-skill {
+  width: 140px;
+}
+#sqlite-skill {
+  width: 190px;
+}
+#mysql-skill {
+  width: 200px;
+}
+#aws-skill {
+  width: 200px;
+}
+#bluemix-skill {
+  width: 150px;
+}
+#abnb-skill {
+  width: 190px;
+}
+#react-skill {
+  width: 160px;
+}
+#ionic-skill {
+  width: 160px;
+}
+#firebase-skill {
+  width: 170px;
 }
