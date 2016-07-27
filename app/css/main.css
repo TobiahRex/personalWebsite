@@ -34,7 +34,8 @@ div.navbar-header {
 }
 
 hr {
-  border-color: #0F0F0F
+  border-color: #0F0F0F;
+  margin-bottom: 0px;
 }
 
 span.to-splash {
@@ -158,7 +159,7 @@ img.carousel-image {
 }
 
 img.carousel-image {
-  padding-bottom: 200px;
+  padding-bottom: 170px;
   width: 55%;
 }
 
@@ -178,6 +179,7 @@ div.carousel-caption > p.ng-binding {
 
 span.italic {
   font-family: 'Roboto Italic';
+  font-weight: bold;
 }
 div.skill-wells {
   box-shadow: 0px 1px 17px rgb(0, 151, 255);

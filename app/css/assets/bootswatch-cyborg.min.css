@@ -6769,6 +6769,7 @@ button.close {
 .text-danger,
 .text-danger:hover {
   color: #cc0000;
+  font-weight: bolder;
 }
 .text-warning,
 .text-warning:hover {
