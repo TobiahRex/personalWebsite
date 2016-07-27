@@ -300,3 +300,14 @@ i.fa-icons:hover {
   box-shadow: 0px 1px 67px rgb(0, 151, 255);
   background-color: rgb(9,18,45);
 }
+
+#download-resume {
+  border: 1px solid #2a9fd6;
+}
+#send-email {
+  border: 1px solid #2a9fd6;
+  margin-left: 30px;
+}
+div.contact-buttons {
+  margin-top: 60px;
+}
