@@ -1,6 +1,6 @@
 @font-face {
-font-family: 'Roboto Italic';
-src: url('/css/assets/Roboto-Thin.ttf');
+  font-family: 'Roboto Italic';
+  src: url('/css/assets/Roboto-Thin.ttf');
 }
 
 body {
@@ -9,17 +9,18 @@ body {
 .jumbotron {
   background-color: rgba(0, 0, 0, 0.94);
 }
-
 .navbar-default .navbar-nav > .active > a {
   color: #2a9fd6;
   background-color: transparent;
   font-size: 18px;
 }
-
+#navbar {
+  z-index: 100;
+}
 nav.navbar.navbar-default {
   height: 120px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.96);
+  background-color: rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 17px rgb(0, 151, 255);
   position: fixed;
 }
@@ -178,11 +179,16 @@ div.carousel-caption > p.ng-binding {
 span.italic {
   font-family: 'Roboto Italic';
 }
+div.skill-wells {
+  box-shadow: 0px 1px 17px rgb(0, 151, 255);
+}
 
 #skills {
   padding-top: 200px;
 }
 #jumbotron-skills {
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: rgba(0, 0, 0, 0.78);
 }
 div.skill-wells {
@@ -194,13 +200,13 @@ p.skill-title {
   font-size: 34px;
 }
 #javascript-skill {
-  width: 100px;
+  width: 140px;
 }
 #html5-skill {
-  width: 100px;
+  width: 130px;
 }
 #css3-skill {
-  width: 70px;
+  width: 90px;
 }
 #mongo-skill {
   width: 130px;
@@ -212,10 +218,10 @@ p.skill-title {
   width: 160px;
 }
 #json-skill {
-  width: 140px;
+  width: 110px;
 }
 #jquery-skill {
-  width: 130px;
+  width: 110px;
 }
 #socket-skill {
   width: 130px;
@@ -248,8 +254,49 @@ p.skill-title {
   width: 160px;
 }
 #ionic-skill {
-  width: 160px;
+  width: 130px;
 }
 #firebase-skill {
   width: 160px;
+}
+#contact {
+  padding-top: 200px;
+}
+#contact-jumbotron {
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.84);
+  padding-top: 30px;
+}
+#contact-jumbotron > div > img {
+  width: 150px;
+}
+
+#contact-question {
+  width: 200px;
+  height: 200px;
+  padding-top: 75px;
+  font-family: 'Roboto Italic';
+  font-size: 32px;
+  border-radius: 50%;
+  background-color: black;
+}
+#contact-space {
+  height: 100px;
+}
+i.fa-icons {
+  padding-left: 20px;
+  font-size: 85px;
+  color: #2a9fd6;
+}
+i.fa-icons:hover {
+  color: #fff;
+  cursor: pointer;
+}
+#icon-container {
+  margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 850px;
+  box-shadow: 0px 1px 67px rgb(0, 151, 255);
+  background-color: rgb(9,18,45);
 }

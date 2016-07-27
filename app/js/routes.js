@@ -22,9 +22,9 @@ function stateProvider($stateProvider, $urlRouterProvider, $authProvider, toastr
     url: '/skills',
     templateUrl: 'html/skills.html',
   })
-  .state('verified', {
-    url: '/verified',
-    templateUrl: 'html/sign_in/verified.html',
+  .state('contact', {
+    url: '/contact',
+    templateUrl: 'html/contact.html',
   })
   .state('unverified', {
     url: '/unverified',
