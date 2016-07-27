@@ -54,20 +54,20 @@ function stateProvider($stateProvider, $urlRouterProvider, $authProvider, toastr
     templateUrl: 'html/sign_in/forgot.html',
     controller: 'forgotController',
   })
-  .state('profile', {
-    url: '/profile/:id',
-    templateUrl: 'html/profile.html',
-    controller: 'profileController',
-    resolve: {
-      dbProfile(Auth, $q, $state) {
-        return Auth.getProfile()
-        .catch(() => {
-          $state.go('login');
-          return $q.reject();
-        });
-      },
-    },
-  })
+  // .state('profile', {
+  //   url: '/profile/:id',
+  //   templateUrl: 'html/profile.html',
+  //   controller: 'profileController',
+  //   resolve: {
+  //     dbProfile(Auth, $q, $state) {
+  //       return Auth.getProfile()
+  //       .catch(() => {
+  //         $state.go('login');
+  //         return $q.reject();
+  //       });
+  //     },
+  //   },
+  // })
   .state('profile.thing1', {
     url: '/thing1',
     templateUrl: 'html/thing1.html',

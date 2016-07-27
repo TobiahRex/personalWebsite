@@ -1,11 +1,6 @@
-function splashController($scope, $state) {
+function splashController($scope) {
   console.log('splashCtrl');
   const vm = $scope;
-  vm.goToHome = goToHome;
-
-  function goToHome() {
-    $state.go('home');
-  }
 }
 
 angular.module('fullStackTemplate').controller('splashController', splashController);

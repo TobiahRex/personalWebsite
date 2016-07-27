@@ -42,7 +42,7 @@ function registerController($scope, $state, $auth, Auth, toastr, Upload) {
     })
     .catch(err => {
       console.error(err);
-      $state.go('home');
+      $state.go('portfolio');
     });
   };
 
