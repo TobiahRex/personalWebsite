@@ -7,11 +7,11 @@ function main($state, $scope, $auth, Auth, toastr) {
     Auth.getProfile()
     .then(res => {
       vm.currentUser = res.data;
-      $state.go('profile', { id: res.data._id });
+      $state.go('about', { id: res.data._id });
     })
     .catch(() => {
       vm.currentUser = null;
-      $state.go('portfolio');
+      $state.go('about');
     });
   }
   function logout() {
