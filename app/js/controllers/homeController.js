@@ -9,16 +9,19 @@ function homeController($scope, $state, toastr) {
     image: '/css/images/stockApp.png',
     title: 'Personal Stock Watch',
     text: 'Search by TICKER or Name. Create a profile. Add, edit, or remove your personal profile watchlist.',
+    features: 'Market On Demand API, User Auth, Social Login (Facebook)',
     id: 0,
   },{
-    image: '/css/images/yelpApp.png',
+    image: '/css/images/yelpApp.jpg',
     title: 'Yelp Search Mockup',
     text: 'Search Restuarants by location. Save to Favorites. Edit Favorites.',
+    features: 'Yelp API, User Auth, Social Login (Facebook).',
     id: 1,
   },{
     image: '/css/images/photoAlbumApp.png',
     title: 'Personal Photo Album Manager',
     text: 'Make an alubm. Upload photos. Assign photos to personalized collections.',
+    features: 'User Auth, Social Login (Facebook)',
     id: 2,
   }];
   console.log('slides: ', slides);
