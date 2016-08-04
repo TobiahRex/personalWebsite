@@ -155,11 +155,9 @@ i.fa.fa-5x.text-primary:hover {
 
 img.carousel-image {
   width: 55%;
-  padding-bottom: 40px;
 }
 
 img.carousel-image {
-  padding-bottom: 170px;
   width: 55%;
 }
 
@@ -312,4 +310,9 @@ i.fa-icons:hover {
 }
 div.contact-buttons {
   margin-top: 60px;
+}
+
+p.navbar-links {
+  font-size: 27px;
+  font-weight: bold;
 }
