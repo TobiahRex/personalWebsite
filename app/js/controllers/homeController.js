@@ -12,7 +12,7 @@ function homeController($scope, $state, toastr) {
     features: 'Market On Demand API, User Auth, Social Login (Facebook)',
     id: 0,
   },{
-    image: '/css/images/yelpApp.jpg',
+    image: '/css/images/Yelp_Grid.jpg',
     title: 'Yelp Search Mockup',
     text: 'Search Restuarants by location. Save to Favorites. Edit Favorites.',
     features: 'Yelp API, User Auth, Social Login (Facebook).',
