@@ -150,20 +150,19 @@ i.fa.fa-5x.text-primary:hover {
 }
 
 #carousel {
-  height: 592px;
+  height: 725px;
 }
 
 img.carousel-image {
-  width: 55%;
+  max-width: 70%;
 }
 
-img.carousel-image {
-  width: 55%;
+div.carousel-main {
+  height: 660px;
 }
 
 div.carousel-caption {
   bottom: 0px;
-  padding-bottom: 0px;
   margin-bottom: 0px;
 }
 

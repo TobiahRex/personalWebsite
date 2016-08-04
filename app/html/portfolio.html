@@ -2,34 +2,44 @@
   <div class='jumbotron' style="height: 800px">
     <div id='carousel' uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
       <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-        <div class="row col-xs-10 col-xs-offset-1">
-          <img class='carousel-image col-xs-12' ng-src="{{slide.image}}" style="margin:auto;">
-          <blockquote style='border-left: 0px' class='col-xs-5' id='project-description' cite="https://git.heroku.com/mighty-shore-12223.git">
-            <span class='text-warning italic'>Full-Stack M.E.A.N.</span>
-            <hr>
-            <div class="text-left">
-              <span class="col-xs-offset-4 text-success italic">Front End: </span>
-              <ul>
-                <li class='col-xs-offset-4'>Angular.js</li>
-              </ul>
-              <span class="col-xs-offset-4 text-danger italic">Back End: </span>
-              <ul>
-                <li class='col-xs-offset-4'>Node.js</li>
-                <li class='col-xs-offset-4'>Express.js</li>
-                <li class='col-xs-offset-4'>Mongo DB</li>
-              </ul>
-              <span class="col-xs-offset-4 text-info italic">Github Repo: </span> <a href="https://github.com/TobiahRex/chFinal.git"><i class="fa fa-github"></i> Here</a><br>
-              <span class="col-xs-offset-4 text-warning italic">Hosted: </span> on <a href="https://fathomless-everglades-44961.herokuapp.com/#/">Heroku </a>
-              <br>
-              <ul class="list-unstyled list-inline">
-                <li><img style='width: 60px' src="/css/images/mongodb.png"/></li>
-                <li><img style='width: 60px' src="/css/images/expressjs.png"/></li>
-                <li><img style='width: 60px' src="/css/images/angularjs.png"/></li>
-                <li><img style='width: 60px' src="/css/images/node_logo.png"/></li>
-              </ul>
-            </div>
-          </blockquote>
-
+        <div class="carousel-main row col-xs-10 col-xs-offset-1 row">
+          <div class="carousel-image-container col-xs-7">
+            <img class='carousel-image col-xs-12' ng-src="{{slide.image}}" style="margin:auto;">
+          </div>
+          <div class="blockquote-container col-xs-5">
+            <blockquote style='border-left: 0px' class='col-xs-12' id='project-description' cite="https://git.heroku.com/mighty-shore-12223.git">
+              <span class='text-warning italic' style="font-size: 28px;">Full-Stack M.E.A.N.</span>
+              <hr>
+              <div class="text-left">
+                <span class="text-success">Front End: </span>
+                <ul class='list-unstyled list-inline'  style="font-size: 24px;">
+                  <li class='col-xs-offset-1'>Angular.js</li>
+                </ul>
+                <span class="text-danger">Back End: </span>
+                <ul class='list-unstyled list-inline'  style="font-size: 24px;">
+                  <li class='col-xs-offset-1'>Node.js</li>
+                  <li class='col-xs-offset-1'>Express.js</li>
+                  <li class='col-xs-offset-1'>Mongo DB</li>
+                </ul>
+                <span class="text-info">Github Repo: </span>
+                <br>
+                 <a class="col-xs-offset-5" href="https://github.com/TobiahRex/chFinal.git"><i class="fa fa-5x fa-github"></i></a>
+                 <br>
+                 <br>
+                <span class="text-warning">Hosted on Heroku: </span>
+                 <a href="https://fathomless-everglades-44961.herokuapp.com/#/" style="font-size: 28px;"> &nbsp Here </a>
+                <br>
+                <br>
+                <span class="text-default">Technologies: </span>
+                <ul class="list-unstyled list-inline">
+                  <li><img style='width: 100px' src="/css/images/mongodb.png"/></li>
+                  <li><img style='width: 100px' src="/css/images/expressjs.png"/></li>
+                  <li><img style='width: 100px' src="/css/images/angularjs.png"/></li>
+                  <li><img style='width: 100px' src="/css/images/node_logo.png"/></li>
+                </ul>
+              </div>
+            </blockquote>
+          </div>
           <div class="row carousel-caption">
             <p class="lead">{{slide.title}}</p>
             <br>
