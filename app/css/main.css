@@ -151,15 +151,12 @@ i.fa.fa-5x.text-primary:hover {
 }
 
 #carousel {
-  height: 725px;
+  height: 795px;
 }
 
-img.carousel-image {
-  max-width: 85%;
-}
 
 div.carousel-main {
-  height: 660px;
+  height: 740px;
 }
 
 div.carousel-caption {
