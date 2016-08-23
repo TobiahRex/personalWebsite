@@ -302,6 +302,13 @@ i.fa-icons:hover {
   border: 1px solid #2a9fd6;
   margin-left: 30px;
 }
+#download-resume:hover {
+  border: 1px solid #FFF;
+}
+#send-email:hover {
+  border: 1px solid #FFF;
+  margin-left: 30px;
+}
 div.contact-buttons {
   margin-top: 60px;
 }
