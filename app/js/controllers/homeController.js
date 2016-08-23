@@ -11,20 +11,25 @@ function homeController($scope, $state, toastr) {
     text: 'Search by TICKER or Name. Create a profile. Add, edit, or remove your personal profile watchlist.',
     features: 'Market On Demand API, User Auth, Social Login (Facebook)',
     id: 0,
+    heroku: 'https://tranquil-meadow-87752.herokuapp.com/#/',
+    github: 'https://github.com/TobiahRex/StockWatch'
   },{
     image: '/css/images/Yelp_Grid.jpg',
     title: 'Yelp Search Mockup',
     text: 'Search Restuarants by location. Save to Favorites. Edit Favorites.',
     features: 'Yelp API, User Auth, Social Login (Facebook).',
     id: 1,
+    heroku: 'https://fathomless-everglades-44961.herokuapp.com/',
+    github: 'https://github.com/TobiahRex/YelpAPIWatchlist'
   },{
     image: '/css/images/photoAlbumApp.png',
     title: 'Personal Photo Album Manager',
     text: 'Make an alubm. Upload photos. Assign photos to personalized collections.',
-    features: 'User Auth, Social Login (Facebook)',
+    features: '',
     id: 2,
+    heroku: 'https://git.heroku.com/beautiful-everglades-28505.git',
+    github: 'https://github.com/TobiahRex/photoAlbum.git'
   }];
-  console.log('slides: ', slides);
   var currIndex = 0;
 
 

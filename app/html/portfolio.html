@@ -7,27 +7,27 @@
             <img class='carousel-image col-xs-12' ng-src="{{slide.image}}" style="margin:auto;">
           </div>
           <div class="blockquote-container col-xs-6">
-            <blockquote style='border-left: 0px' class='col-xs-12' id='project-description' cite="https://git.heroku.com/mighty-shore-12223.git">
+            <blockquote style='border-left: 0px' class='col-xs-12' id='project-description'>
               <span class='text-warning italic' style="font-size: 28px;">Full-Stack M.E.A.N.</span>
               <hr>
               <div class="text-left">
-                <span class="text-success">Front End: </span>
-                <ul class='list-unstyled list-inline'  style="font-size: 24px;">
-                  <li class='col-xs-offset-1'>Angular.js</li>
-                </ul>
-                <span class="text-danger">Back End: </span>
-                <ul class='list-unstyled list-inline'  style="font-size: 24px;">
-                  <li class='col-xs-offset-1'>Node.js</li>
-                  <li class='col-xs-offset-1'>Express.js</li>
-                  <li class='col-xs-offset-1'>Mongo DB</li>
-                </ul>
-                <span class="text-info">Github Repo: </span>
+                <p class="text-success">Front End: </p>
+                <p class='lead'  style="font-size: 24px;">
+                  <p class='col-xs-offset-1'>Angular.js</p>
+                </p>
+                <p class="text-danger">Back End: </p>
+                <p class='lead'  style="font-size: 24px;">
+                  <p class='col-xs-offset-1'>Node.js</p>
+                  <p class='col-xs-offset-1'>Express.js</p>
+                  <p class='col-xs-offset-1'>Mongo DB</p>
+                </p>
+                <p class="text-info">Github Repo: </p>
                 <br>
-                 <a class="col-xs-offset-5" href="https://github.com/TobiahRex/chFinal.git"><i class="fa fa-5x fa-github"></i></a>
+                 <a class="col-xs-offset-5" href="{{slide.github}}" style="font-size: 20px;"><i class="fa fa-github"></i> Here</a>
                  <br>
                  <br>
                 <span class="text-warning">Hosted on Heroku: </span>
-                 <a href="https://fathomless-everglades-44961.herokuapp.com/#/" style="font-size: 28px;"> &nbsp Here </a>
+                 <a href="{{slide.heroku}}" style="font-size: 28px;"> &nbsp Here </a>
                 <br>
                 <br>
                 <span class="text-default">Main Technologies: </span>
@@ -41,9 +41,9 @@
             </blockquote>
           </div>
           <div class="row carousel-caption">
-            <p class="lead">{{slide.title}}</p>
+            <p class="lead text-primary">{{slide.title}}</p>
             <br>
-            <p class='text-primary lead'>{{slide.text}}</p>
+            <p class='lead'> <span class="text-info">Description: </span> {{slide.text}}</p>
             <p class='lead'> <span class="text-info">Features: </span>{{slide.features}}</p>
           </div>
         </div>
